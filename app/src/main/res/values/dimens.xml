@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeAuthor">10sp</dimen>
+    <dimen name="textSizeTitle">13sp</dimen>
+    <dimen name="textSizeLanguage">12sp</dimen>
+    <dimen name="imageWidth">36dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin2dp">2dp</dimen>
+</resources>

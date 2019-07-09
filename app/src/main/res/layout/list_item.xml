@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="@dimen/imageWidth"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin16dp"
+        android:layout_marginStart="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16dp"
+        android:layout_marginEnd="@dimen/margin16dp">
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorBookAuthor"
+            android:textSize="@dimen/textSizeAuthor"
+            android:fontFamily="sans-serif-medium"
+            tools:text="Charles Duhiig"/>
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/colorBookTitle"
+            android:textSize="@dimen/textSizeTitle"
+            android:layout_marginTop="@dimen/margin2dp"
+            tools:text="The Power of Habit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeLanguage"
+            android:textColor="@color/colorLanguage"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="EN"/>
+
+    </LinearLayout>
+</LinearLayout>
